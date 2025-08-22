@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    margin-left: 20px;
+    background-color: #f0e68c; 
+    font-family: sans-serif;
+}
+
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px); 
+    grid-template-rows: repeat(3, 100px); 
+    gap: 5px;
+    margin: 20px 0;
+}
+
+.element {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border: 2px solid #333;
+    border-radius: 5px;
+    font-size: 3rem; /* Makes the 'X' and 'O' much bigger */
+    font-weight: bold;
+    cursor: pointer;
+    color: #333;
+}
+
+#startGameBtn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #4CAF50; /* A nice green color */
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+div, button, h1 {
+    margin-bottom: 10px;
+}
